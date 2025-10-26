@@ -226,9 +226,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
   max-width: 320px;
-  padding: 43px 20px;
+  padding: 43px 20px 10px 20px;
   -webkit-transform: translate(0, -20px);
       -ms-transform: translate(0, -20px);
           transform: translate(0, -20px);

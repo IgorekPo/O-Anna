@@ -4,10 +4,11 @@
    color: #555;
    line-height: 1.8;
   font-weight: 200;
+  letter-spacing: 1px;
   font-style: normal;
-   font-size: calc(16px + 4 * (100vw / 1440));
+   font-size: calc(12px + 8 * (100vw / 1440));
      @media(max-width: 767px){
-   font-size: calc(16px + (4 + 4 * 0.7 ) * ((100vw - 320px) / 1440));
+   font-size: calc(12px + (8 + 8 * 0.7 ) * ((100vw - 320px) / 1440));
   };
 }
 
@@ -18,9 +19,9 @@
   font-style: normal;
   color: #000;
   line-height: 1.3;
-  font-size: calc(40px + 88 * (100vw / 1440));
+  font-size: calc(35px + 73 * (100vw / 1440));
   @media(max-width: 767px){
-   font-size: calc(40px + (88 + 88 * 0.7 ) * ((100vw - 320px) / 1440));
+   font-size: calc(35px + (73 + 73 * 0.7 ) * ((100vw - 320px) / 1440));
   };
 }
 
@@ -42,9 +43,9 @@
    letter-spacing: 2px;
   font-weight: 200;
   font-style: normal;
-   font-size: calc(20px + 4 * (100vw / 1440));
+   font-size: calc(15px + 9 * (100vw / 1440));
    @media(max-width: 767px){
-   font-size: calc(20px + (4 + 4 * 0.7 ) * ((100vw - 320px) / 1440));
+   font-size: calc(15px + (9 + 9 * 0.7 ) * ((100vw - 320px) / 1440));
   };
 }
 

@@ -8,7 +8,7 @@
    width: 100%;
    background-color: rgba(255, 255, 255, 0.184);
    &__container {
-         max-width: 1920px;
+      max-width: 1920px;
       position: relative;
       height: 80px;
       display: flex;
@@ -33,7 +33,7 @@
       width: 40px;
       height: 24px;
       position: relative;
-      z-index: 3;
+      z-index: 4;
       span{
          position: absolute;
          background-color: #000;
@@ -90,7 +90,7 @@
       padding: 43px 20px 10px 20px;
       transform: translate(0, -20px);
       background-color: #fff;
-      z-index: 2;
+      z-index: 3;
       @media(max-width: 552px){
          &{
             max-width: 270px;

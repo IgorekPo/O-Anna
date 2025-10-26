@@ -24,7 +24,8 @@
 		&__tittle {
          @extend %writtingText;
          position: absolute;
-         top: 20%
+         top: 18%;
+         z-index: 1;
 		}
 
 		&__name {
@@ -39,18 +40,32 @@
          @extend %maintittle;
          color: #000;
          font-weight: 600;
-         font-size: 10px;
-         padding: 5px 10px;
-         border-radius: 5px;
+         font-size: 14px;
+         padding: 7px 14px;
+         border-radius: 12px;
          background-color: #F3EBEB;
+         box-shadow: -1px 1px 5px #000;
+         transition: all .5s ease;
+         @media(hover:hover){
+            &:hover{
+               scale: 1.1;
+               box-shadow: -1px 1px 15px #000;
+            }
+         };
 		}
 
 		&__img {
+         position: relative;
          height: 100%;
          aspect-ratio: 825 / 986;
+         width: 100%;
          & img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
          }
 		}
 }

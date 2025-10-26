@@ -5,6 +5,7 @@
    top: 0;
    left: 0;
    width: 100%;
+   background-color: rgba(255, 255, 255, 0.184);
    &__container {
       position: relative;
       height: 80px;
@@ -86,7 +87,7 @@
       max-width: 320px;
       padding: 43px 20px 10px 20px;
       transform: translate(0, -20px);
-      background-color: #f6f6f671;
+      background-color: rgba(246, 246, 246, 0.337);
       opacity: 0.9;
       @media(max-width: 552px){
          &{

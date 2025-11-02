@@ -10,6 +10,7 @@
       <link
          href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
          rel="stylesheet">
+      <link rel="stylesheet" href="./css/animate.css">
    </head>
    <body>
       <div class="wrapper">
@@ -42,7 +43,7 @@
                   <div class="potential__body">
                      <h1 class="potential__tittle">Розкрий Свій
                         Потенціал</h1>
-                     <div class="potential__information">
+                     <div class="wow bounceInLeft potential__information">
                         <h2 class="potential__name">прийміть свою подорож</h2>
                         <p class="potential__text">Ви енергійна жінка з мріями,
                            безмежними, як горизонт? Готові втілити ці мрії в
@@ -50,7 +51,7 @@
                         <button class="potential__button">Дізнатися </button>
                      </div>
 
-                     <div class="potential__img">
+                     <div class="wow bounceInRight potential__img">
                         <img src="./img/potential.png" alt="Потенціал">
                      </div>
                   </div>
@@ -58,7 +59,7 @@
             </section>
             <section class="about">
                <div class="about__container">
-                  <div class="about__body">
+                  <div class="wow bounceInLeft about__body">
                      <div class="about__img"><img src="./img/about.png"
                            alt="about">
                      </div>
@@ -78,6 +79,10 @@
             </section>
          </main>
          <footer class="footer"></footer>
+         <script src="/wow.min.js"></script>
+         <script>
+              new WOW().init();
+              </script>
          <script src="script.js" defer></script>
       </div>
    </body>

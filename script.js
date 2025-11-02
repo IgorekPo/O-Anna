@@ -9,4 +9,5 @@ burgerMenu.addEventListener ('click' , function(){
 
 inputTel.addEventListener ('click', function(){
    inputTel.classList.add ('active');
+   
 })

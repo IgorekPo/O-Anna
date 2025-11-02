@@ -558,6 +558,11 @@ body {
     width: 80%;
   }
 }
+@media (max-width: 400px) {
+  .consultation__links {
+    width: 100%;
+  }
+}
 .consultation__input {
   text-align: center;
   color: #999;
@@ -565,6 +570,9 @@ body {
   padding-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #D8D8D8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 18px;
 }
 .consultation__input.active {
   -webkit-box-shadow: 0px 0px 10px #999;

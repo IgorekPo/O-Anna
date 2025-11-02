@@ -1,7 +1,12 @@
 @use './_fonts';
 
 .consultation {
-
+   margin-bottom: 160px;
+   @media(max-width: 768px){
+      &{
+         margin-bottom: 80px;
+      }
+   };
    &__container {
       display: flex;
       justify-content: space-between;
@@ -16,7 +21,6 @@
          }
       };
    }
-
    &__informations {
       display: flex;
       flex-direction: column;
@@ -31,16 +35,13 @@
       }
 
    }
-
    &__tittle {
       @extend %secondText;
       text-transform: uppercase
    }
-
    &__text {
       @extend %maintittle;
    }
-
    &__links {
       flex: 0 0 calc(35% - 20px);
       display: flex;
@@ -58,7 +59,6 @@
          }
       }
    }
-
    &__input {
       text-align: center;
       color: #999;
@@ -72,7 +72,6 @@
          box-shadow: 0px 0px 10px #999;
       }
    }
-
    &__button {
       cursor: pointer;
       background-color: #9B7150;

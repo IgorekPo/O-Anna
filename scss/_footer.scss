@@ -1,0 +1,106 @@
+@use './_fonts';
+
+.footer {
+   margin-top: 40px;
+   &__container {
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 80px;
+   }
+
+   &__img {
+      aspect-ratio: 380 / 380;
+      max-width: 380px;
+      flex: 1 1 calc(33.333333% - 20px);
+      & img{
+         width: 100%;
+      }
+   }
+
+   &__name {
+            @extend %maintittle;
+      font-weight: 400;
+      transition: all .5s ease;
+      margin-bottom: 40px;
+      @media(hover: hover){
+      &:hover{
+         letter-spacing: 15px;
+         }
+      };
+   }
+
+   &__socials {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 50px;
+   }
+
+   &__social {
+      width: 40px;
+      height: 40px;
+      @media(max-width: 648px){
+         &{
+            width: 30px;
+            height: 30px;
+         }
+      };
+      & img{
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+
+   &__links {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+    width: 100%;
+   }
+
+   &__link {
+      transition: all .5s ease;
+      &:hover{
+         scale: 1.2;
+      }
+   }
+
+   &__copiright {
+      margin-top: 70px;
+      height: 112px;
+      border-top: 1px solid #94949454;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      color: #3035488d;
+      font-size: 12px;
+      @media(max-width: 499px){
+         &{
+            font-size: 8px;
+            height: 40px
+         }
+      };
+   }
+
+   &__year {
+   }
+
+   &__designer {
+   }
+}

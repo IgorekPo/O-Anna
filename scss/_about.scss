@@ -2,10 +2,12 @@
 
 
 .about {
-margin-bottom: 160px;
-@media(max-width: 768px){
-   margin-bottom: 80px;
-};
+   margin-bottom: 160px;
+   @media(max-width: 768px){
+      &{
+         margin-bottom: 80px;
+      }
+   };
    &__container {
    }
 

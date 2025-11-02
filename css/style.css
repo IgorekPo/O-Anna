@@ -179,7 +179,7 @@ body {
   width: 40px;
   height: 24px;
   position: relative;
-  z-index: 4;
+  z-index: 10;
 }
 .header__burger span {
   position: absolute;
@@ -251,7 +251,7 @@ body {
       -ms-transform: translate(0, -20px);
           transform: translate(0, -20px);
   background-color: #fff;
-  z-index: 3;
+  z-index: 9;
 }
 @media (max-width: 552px) {
   .header__menu {

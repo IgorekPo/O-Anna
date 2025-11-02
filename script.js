@@ -5,9 +5,15 @@ burgerMenu.addEventListener ('click' , function(){
    burgerMenu.classList.toggle ('active');
    headerMenu.classList.toggle ('active');
 
-})
+});
+
+
 
 inputTel.addEventListener ('click', function(){
    inputTel.classList.add ('active');
-   
-})
+
+});
+
+
+
+

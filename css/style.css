@@ -796,17 +796,7 @@ body {
   margin-top: 70px;
   height: 112px;
   border-top: 1px solid rgba(148, 148, 148, 0.3294117647);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: rgba(48, 53, 72, 0.5529411765);
   font-size: 12px;
 }
@@ -815,4 +805,17 @@ body {
     font-size: 8px;
     height: 40px;
   }
+}
+.footer .copiright-footer__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

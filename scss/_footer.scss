@@ -83,11 +83,7 @@
       margin-top: 70px;
       height: 112px;
       border-top: 1px solid #94949454;
-      display: flex;
       width: 100%;
-      align-items: center;
-      text-align: center;
-      justify-content: space-between;
       color: #3035488d;
       font-size: 12px;
       @media(max-width: 499px){
@@ -95,12 +91,20 @@
             font-size: 8px;
             height: 40px
          }
-      };
+      };       
    }
-
    &__year {
    }
 
    &__designer {
    }
+.copiright-footer {
+   &__container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+   }
+}
 }

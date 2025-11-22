@@ -1,0 +1,120 @@
+@use './_fonts';
+
+
+.price-hello {
+   margin-top: 80px;
+   margin-bottom: 60px;
+		&__container {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         gap: 60px;
+         @media(max-width: 700px){
+            gap: 40px;
+         };
+         @media(max-width: 425px){
+            gap: 20px;
+         };
+		}
+
+		&__tittle {
+         @extend %writtingText;
+         & span{
+            color: #694E38;
+         }
+		}
+
+		&__image {
+         aspect-ratio: 1410 / 381;
+         object-fit: cover;
+         & img{
+         width: 100%;
+         height: 100%;
+         }
+		}
+}
+
+
+
+.thre {
+  height: 100vh;
+}
+.thre__container {
+  display: flex;
+  flex-direction: column;
+}
+.thre__items {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  align-items: center;
+}
+.thre__item {
+  cursor: pointer;
+  @extend %secondText;
+}
+.thre__content {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.thre__first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: blue;
+}
+.thre__second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  color: red;
+}
+.thre__third {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  color: green;
+}
+.thre__first.active,
+.thre__second.active,
+.thre__third.active {
+  transition: all 2s ease;
+  opacity: 1;
+}
+.item__thre1,
+.item__thre2,
+.item__thre3 {
+  position: relative;
+}
+.item__thre1::after,
+.item__thre2::after,
+.item__thre3::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: #694E38;
+  transition: all 0.5s ease;
+}
+.item__thre1.active::after,
+.item__thre2.active::after,
+.item__thre3.active::after {
+  content: "";
+  width: 100%;
+}
+.item__thre1.active,
+.item__thre2.active,
+.item__thre3.active {
+  color: #694E38;
+  transition: all 0.5s ease;
+}

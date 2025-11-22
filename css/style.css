@@ -905,6 +905,11 @@ main {
     background-color: #9B7150;
   }
 }
+@media (max-width: 768px) {
+  .pricing__block {
+    background-color: #F3EBEB;
+  }
+}
 
 .block-pricing {
   display: -webkit-box;
@@ -975,6 +980,12 @@ main {
   transition: all 0.5s ease;
   -webkit-box-shadow: 1px 1px 1px #000;
           box-shadow: 1px 1px 1px #000;
+}
+@media (max-width: 768px) {
+  .block-pricing__link {
+    color: #fff;
+    background-color: #9B7150;
+  }
 }
 @media (hover: hover) {
   .block-pricing__link:hover {

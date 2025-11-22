@@ -75,6 +75,9 @@
                background-color: #9B7150;
             }
             }
+         };
+         @media(max-width: 768px){
+               background-color: #F3EBEB;
 
          };
 		}
@@ -131,8 +134,11 @@
          font-size: 19px;
          color: #000;
          transition: all .5s ease;
-               box-shadow: 1px 1px 1px #000;
-
+         box-shadow: 1px 1px 1px #000;
+         @media(max-width: 768px){
+            color: #fff;
+            background-color: #9B7150;
+         };
          @media(hover: hover){
             &:hover{
                box-shadow: 2px 2px 15px #000;

@@ -1,7 +1,7 @@
 @use './_fonts';
 .perspective {
-   margin-bottom: 160px;
-   @media(max-width: 768px){
+   margin-bottom: 360px;
+   @media(max-width: 475px){
       &{
          margin-bottom: 80px;
       }

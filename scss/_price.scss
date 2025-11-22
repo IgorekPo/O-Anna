@@ -1,0 +1,144 @@
+@use './_fonts';
+
+
+.pricing {
+
+		&__container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         gap: 20px;
+         margin-bottom: 80px;
+         @media(max-width: 684px){
+         &{
+            gap: 2px;
+         }
+         };
+		}
+
+		&__tittle {
+         @extend %writtingText;
+
+		}
+
+		&__text {
+      @extend %maintittle;
+         margin-bottom: 40px;
+		}
+
+		&__blocks {
+         display: flex;
+         justify-content: space-between;
+         gap: 20px;
+         flex-wrap: wrap;
+         width: 100%;
+            @media(max-width: 1424.99px){
+            &{
+               justify-content: center;
+            }
+
+         }
+		}
+
+		&__block {
+         background-color: #fff;
+         transition: all .5s ease;
+         padding: 82px 79px;
+         border: 1px solid #E1E1E1;
+         flex: 1 1 calc(33.33333333% - 20px);
+            @media(max-width: 1424.99px){
+            &{
+            flex: 0 0 calc(50% - 20px);
+            }
+            @media(max-width: 955.99px){
+               &{
+                  padding: 40px 20px;
+               }
+            };
+            @media(max-width: 684px){
+               &{
+                  flex: 1 1 100%;
+               }
+            };
+            @media(max-width: 340px){
+               &{
+                  padding: 40px 15px;
+               }
+            };
+         };
+         @media(hover: hover){
+            &:hover{
+               background-color: #F3EBEB;
+               & .block-pricing__link{
+               color: #fff;
+               background-color: #9B7150;
+            }
+            }
+
+         };
+		}
+}
+.block-pricing {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+      &__tittle{
+         display: flex;
+         flex-direction: column;
+
+      }
+		&__name {
+      @extend %maintittle;
+                  font-size: 24px;
+		}
+
+		&__price {
+         @extend %writtingText;
+         font-size: 80px
+		}
+
+		&__informations {
+         @extend %mainText;
+         display: flex;
+         flex-direction: column;
+         gap: 9px;
+         flex: 1 1 auto;
+         align-items: center;
+
+		}
+
+		&__information {
+         display: flex;
+         gap: 12px;
+         text-align: center;
+         font-size: 19px;
+         &::before{
+            content: "";
+            background: url('../img/done.svg') 0 0 no-repeat;
+            width: 15px;
+            height: 15px;
+            align-self: center;
+            flex-shrink: 0;
+         }
+		}
+
+		&__link {
+         padding: 18px 28px;
+         border-radius: 10px;
+         background-color: #EDEDED;
+         @extend %mainText;
+         font-size: 19px;
+         color: #000;
+         transition: all .5s ease;
+               box-shadow: 1px 1px 1px #000;
+
+         @media(hover: hover){
+            &:hover{
+               box-shadow: 2px 2px 15px #000;
+            }
+         };
+		}
+}
+
+

@@ -44,6 +44,18 @@
          display: flex;
          min-width: 0;
       }
+      & .swiper-pagination{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         text-align: center;
+         height: 50px;
+         &-bullet{
+            background-color: #fff;
+            flex: 1 1 33.33333%;
+            width: 100%;
+         }
+      } 
 		&__block {
       display: flex;
       flex-direction: column;

@@ -3,6 +3,7 @@ new Swiper('.swiper',{
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    autoHeight: true,
     renderBullet: function (index, className) {
       // Создайте массив с вашими названиями
       const buttonNames = ['Особистий', 'Корпоративний', 'Саморозвиток'];

@@ -37,6 +37,9 @@
 .price-price {
 		&__container {
 		}
+      & .body__swiper {
+         padding-bottom: 80px;
+      }
       &.swiper{
          display: flex;
          min-width: 0;

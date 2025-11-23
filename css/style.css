@@ -1032,6 +1032,9 @@ main {
   height: 100%;
 }
 
+.price-price .body__swiper {
+  padding-bottom: 80px;
+}
 .price-price.swiper {
   display: -webkit-box;
   display: -ms-flexbox;

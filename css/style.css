@@ -1032,6 +1032,10 @@ main {
   height: 100%;
 }
 
+.price-price {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
 .price-price .body__swiper {
   padding-bottom: 80px;
 }
@@ -1052,7 +1056,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  height: 50px;
+  height: 70px;
 }
 .price-price .swiper-pagination-bullet {
   background-color: #fff;
@@ -1060,6 +1064,7 @@ main {
       -ms-flex: 1 1 33.33333%;
           flex: 1 1 33.33333%;
   width: 100%;
+  font-size: 24px;
 }
 .price-price__block {
   display: -webkit-box;

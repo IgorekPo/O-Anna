@@ -82,12 +82,23 @@
 		}
 
 		&__buy {
+      display: flex;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      align-self: center;
 		}
 
 		&__prise {
+      @extend %writtingText;
 		}
 
 		&__link {
+      @extend %secondText;
+      color: #fff;
+      padding: 6px 30px;
+      background-color: #694E38;
+      border-radius: 50px;
 		}
 }
 .price-module {

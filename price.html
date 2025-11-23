@@ -11,6 +11,9 @@
          href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
          rel="stylesheet">
       <link rel="stylesheet" href="./css/animate.css">
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
    </head>
    <body>
       <div class="wrapper">
@@ -51,96 +54,367 @@
             </section>
             <section class="price-price">
                <div class="price-price__container">
-                  <div class="price-price__block">
-                     <h2 class="price-price__name">Курс Особистий</h2>
-                     <div class="price-price__informetions">
-                        <h3 class="price-price__overview">Особисте
-                           зростання</h3>
-                        <p class="price-price__text">Особистий розвиток допоможе
-                           Вам розкрити свій потенціал Lorem ipsum dolor, sit
-                           amet consectetur adipisicing elit. Sunt fuga quam
-                           quae soluta iste amet laudantium laborum eos
-                           obcaecati architecto?</p>
-                        <p class="price-price__text">Щоб стати більш
-                           досвідченним Lorem ipsum dolor, sit amet consectetur
-                           adipisicing elit. Corporis eaque, obcaecati officiis
-                           similique ut ex hic mollitia nemo consequuntur vitae
-                           unde amet ad aspernatur non doloremque et ducimus,
-                           excepturi doloribus architecto! Ab, nam. Laborum
-                           facilis neque ratione quae accusantium blanditiis
-                           quisquam velit quas inventore facere sed ipsum
-                           debitis nam illum aut corporis magnam cumque, nobis
-                           fuga voluptatem nostrum. Explicabo, est?</p>
-                        <h3 class="price-price__what">Що Ви отримаєте з цього
-                           курсу</h3>
-                        <ul class="price-price__learns">
-                           <li class="price-price__lear">Знайдете себе</li>
-                           <li class="price-price__lear">Опануєте тайм
-                              менеджмент</li>
-                           <li class="price-price__lear">Lorem, ipsum
-                              dolor.</li>
-                           <li class="price-price__lear">Lorem, ipsum.</li>
-                           <li class="price-price__lear">Lorem ipsum dolor
-                              sit.</li>
-                        </ul>
-                        <p class="price-price__text">Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit. Sequi quidem veniam
-                           fugit quae delectus magni?</p>
-                     </div>
-                     <div class="price-price__module price-module">
-                        <h3 class="price-module__mane">Модуль 1:
-                           Самопознання</h3>
-                        <ul class="price-module__times">
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>розвиток</p>
-                              <div><p>1 година</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>саморозвиток</p>
-                              <div><p>18 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                        </ul>
-                     </div>
-                     <div class="price-price__module price-module">
-                        <h3 class="price-module__mane">Модуль 2:
-                           Розвиток</h3>
-                        <ul class="price-module__times">
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>5 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>40 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>2 години</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                        </ul>
-                     </div>
-                     <div class="price-price__module price-module">
-                        <h3 class="price-module__mane">Модуль 3:
-                           Відпочинок</h3>
-                        <ul class="price-module__times">
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                           <li class="price-module__time"><p>знайомство</p>
-                              <div><p>24 хвилини</p> <img src="./img/lock.png"
-                                    alt></div></li>
-                        </ul>
-                     </div>
-                     <div class="price-price__buy">
-                        <div class="price-price__prise">$39</div>
-                        <a href="#" class="price-price__link">Купити</a>
+                  <div class="swiper">
+                     <div class="body__swiper swiper-wrapper">
+                        <div class="swiper-slide price-price__block">
+                           <h2 class="price-price__name">Курс Особистий</h2>
+                           <div class="price-price__informetions">
+                              <h3 class="price-price__overview">Особисте
+                                 зростання</h3>
+                              <p class="price-price__text">Особистий розвиток
+                                 допоможе
+                                 Вам розкрити свій потенціал Lorem ipsum dolor,
+                                 sit
+                                 amet consectetur adipisicing elit. Sunt fuga
+                                 quam
+                                 quae soluta iste amet laudantium laborum eos
+                                 obcaecati architecto?</p>
+                              <p class="price-price__text">Щоб стати більш
+                                 досвідченним Lorem ipsum dolor, sit amet
+                                 consectetur
+                                 adipisicing elit. Corporis eaque, obcaecati
+                                 officiis
+                                 similique ut ex hic mollitia nemo consequuntur
+                                 vitae
+                                 unde amet ad aspernatur non doloremque et
+                                 ducimus,
+                                 excepturi doloribus architecto! Ab, nam.
+                                 Laborum
+                                 facilis neque ratione quae accusantium
+                                 blanditiis
+                                 quisquam velit quas inventore facere sed ipsum
+                                 debitis nam illum aut corporis magnam cumque,
+                                 nobis
+                                 fuga voluptatem nostrum. Explicabo, est?</p>
+                              <h3 class="price-price__what">Що Ви отримаєте з
+                                 цього
+                                 курсу</h3>
+                              <ul class="price-price__learns">
+                                 <li class="price-price__lear">Знайдете
+                                    себе</li>
+                                 <li class="price-price__lear">Опануєте тайм
+                                    менеджмент</li>
+                                 <li class="price-price__lear">Lorem, ipsum
+                                    dolor.</li>
+                                 <li class="price-price__lear">Lorem,
+                                    ipsum.</li>
+                                 <li class="price-price__lear">Lorem ipsum dolor
+                                    sit.</li>
+                              </ul>
+                              <p class="price-price__text">Lorem ipsum dolor sit
+                                 amet
+                                 consectetur adipisicing elit. Sequi quidem
+                                 veniam
+                                 fugit quae delectus magni?</p>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 1:
+                                 Самопознання</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li class="price-module__time"><p>розвиток</p>
+                                    <div><p>1 година</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>саморозвиток</p>
+                                    <div><p>18 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 2:
+                                 Розвиток</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>5 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>40 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>2 години</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 3:
+                                 Відпочинок</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__buy">
+                              <div class="price-price__prise">$39</div>
+                              <a href="#" class="price-price__link">Купити</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide price-price__block">
+                           <h2 class="price-price__name">Корпоративний</h2>
+                           <div class="price-price__informetions">
+                              <h3 class="price-price__overview">Корпаративне
+                                 зростання</h3>
+                              <p class="price-price__text">Особистий розвиток
+                                 допоможе
+                                 Вам розкрити свій потенціал Lorem ipsum dolor,
+                                 sit
+                                 amet consectetur adipisicing elit. Sunt fuga
+                                 quam
+                                 quae soluta iste amet laudantium laborum eos
+                                 obcaecati architecto?</p>
+                              <p class="price-price__text">Щоб стати більш
+                                 досвідченним Lorem ipsum dolor, sit amet
+                                 consectetur
+                                 adipisicing elit. Corporis eaque, obcaecati
+                                 officiis
+                                 similique ut ex hic mollitia nemo consequuntur
+                                 vitae
+                                 unde amet ad aspernatur non doloremque et
+                                 ducimus,
+                                 excepturi doloribus architecto! Ab, nam.
+                                 Laborum
+                                 facilis neque ratione quae accusantium
+                                 blanditiis
+                                 quisquam velit quas inventore facere sed ipsum
+                                 debitis nam illum aut corporis magnam cumque,
+                                 nobis
+                                 fuga voluptatem nostrum. Explicabo, est?</p>
+                              <h3 class="price-price__what">Що Ви отримаєте з
+                                 цього
+                                 курсу</h3>
+                              <ul class="price-price__learns">
+                                 <li class="price-price__lear">Знайдете
+                                    себе</li>
+                                 <li class="price-price__lear">Опануєте тайм
+                                    менеджмент</li>
+                                 <li class="price-price__lear">Lorem, ipsum
+                                    dolor.</li>
+                                 <li class="price-price__lear">Lorem,
+                                    ipsum.</li>
+                                 <li class="price-price__lear">Lorem ipsum dolor
+                                    sit.</li>
+                              </ul>
+                              <p class="price-price__text">Lorem ipsum dolor sit
+                                 amet
+                                 consectetur adipisicing elit. Sequi quidem
+                                 veniam
+                                 fugit quae delectus magni?</p>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 1:
+                                 Самопознання</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li class="price-module__time"><p>розвиток</p>
+                                    <div><p>1 година</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>саморозвиток</p>
+                                    <div><p>18 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 2:
+                                 Розвиток</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>5 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 3:
+                                 Відпочинок</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__buy">
+                              <div class="price-price__prise">$99</div>
+                              <a href="#" class="price-price__link">Купити</a>
+                           </div>
+                        </div>
+                        <div class="swiper-slide price-price__block">
+                           <h2 class="price-price__name">Курс Саморозвиток</h2>
+                           <div class="price-price__informetions">
+                              <h3
+                                 class="price-price__overview">Саморозвиток</h3>
+                              <p class="price-price__text">Особистий розвиток
+                                 допоможе
+                                 Вам розкрити свій потенціал Lorem ipsum dolor,
+                                 sit
+                                 amet consectetur adipisicing elit. Sunt fuga
+                                 quam
+                                 quae soluta iste amet laudantium laborum eos
+                                 obcaecati architecto?</p>
+                              <p class="price-price__text">Щоб стати більш
+                                 досвідченним Lorem ipsum dolor, sit amet
+                                 consectetur
+                                 adipisicing elit. Corporis eaque, obcaecati
+                                 officiis
+                                 similique ut ex hic mollitia nemo consequuntur
+                                 vitae
+                                 unde amet ad aspernatur non doloremque et
+                                 ducimus,
+                                 excepturi doloribus architecto! Ab, nam.
+                                 Laborum
+                                 facilis neque ratione quae accusantium
+                                 blanditiis
+                                 quisquam velit quas inventore facere sed ipsum
+                                 debitis nam illum aut corporis magnam cumque,
+                                 nobis
+                                 fuga voluptatem nostrum. Explicabo, est?</p>
+                              <h3 class="price-price__what">Що Ви отримаєте з
+                                 цього
+                                 курсу</h3>
+                              <ul class="price-price__learns">
+                                 <li class="price-price__lear">Знайдете
+                                    себе</li>
+                                 <li class="price-price__lear">Опануєте тайм
+                                    менеджмент</li>
+                                 <li class="price-price__lear">Lorem, ipsum
+                                    dolor.</li>
+                                 <li class="price-price__lear">Lorem,
+                                    ipsum.</li>
+                                 <li class="price-price__lear">Lorem ipsum dolor
+                                    sit.</li>
+                              </ul>
+                              <p class="price-price__text">Lorem ipsum dolor sit
+                                 amet
+                                 consectetur adipisicing elit. Sequi quidem
+                                 veniam
+                                 fugit quae delectus magni?</p>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 1:
+                                 Самопознання</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li class="price-module__time"><p>розвиток</p>
+                                    <div><p>1 година</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>саморозвиток</p>
+                                    <div><p>18 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 2:
+                                 Розвиток</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>5 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>40 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>2 години</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__module price-module">
+                              <h3 class="price-module__mane">Модуль 3:
+                                 Відпочинок</h3>
+                              <ul class="price-module__times">
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                                 <li
+                                    class="price-module__time"><p>знайомство</p>
+                                    <div><p>24 хвилини</p> <img
+                                          src="./img/lock.png"
+                                          alt></div></li>
+                              </ul>
+                           </div>
+                           <div class="price-price__buy">
+                              <div class="price-price__prise">$169</div>
+                              <a href="#" class="price-price__link">Купити</a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -201,5 +475,9 @@
             </div>
          </footer>
       </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script src="script.js" defer></script>
+      <script src="price.js" defer></script>
    </body>
 </html>

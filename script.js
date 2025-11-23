@@ -7,12 +7,14 @@ burgerMenu.addEventListener ('click' , function(){
 
 });
 
-
-
+if(inputTel){
 inputTel.addEventListener ('click', function(){
    inputTel.classList.add ('active');
 
 });
+}
+
+
 
 
 

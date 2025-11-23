@@ -1064,7 +1064,8 @@ main {
       -ms-flex: 1 1 33.33333%;
           flex: 1 1 33.33333%;
   width: 100%;
-  text-shadow: 2px 4px 3px #555;
+  text-shadow: 2px 4px 4px #555;
+  font-weight: 600;
 }
 .price-price__block {
   display: -webkit-box;

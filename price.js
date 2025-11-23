@@ -3,7 +3,8 @@ new Swiper('.swiper',{
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    autoHeight: true,
+
+    loopedSlides: 3,
     renderBullet: function (index, className) {
       // Создайте массив с вашими названиями
       const buttonNames = ['Особистий', 'Корпоративний', 'Саморозвиток'];
@@ -11,5 +12,7 @@ new Swiper('.swiper',{
       return '<span class="' + className + '">' + buttonNames[index] + '</span>';
     },
 
-  },  
+  },
+  loop: true,  
+      autoHeight: true,
 });
